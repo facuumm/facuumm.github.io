@@ -246,7 +246,7 @@
             <div class="title-section">
                 <div class="title-text">
                     <h1>JUAN FACUNDO MORICI</h1>
-                    <p data-i18n="subtitle">Neuroscientist | Postdoctoral Researcher</p>
+                    <p data-i18n="subtitle">Neuroscientist</p>
                 </div>
                 <div class="lang-switcher">
                     <button class="lang-btn active" onclick="changeLang('en')">EN</button>
@@ -274,9 +274,7 @@
                 <div id="about" class="section active">
                     <p data-i18n="about_1">I am a Postdoctoral Researcher at the Center for Neuroscience, Sorbonne Université in Paris, working in the Girardeau Lab. My research focuses on how memories are formed, how they are stabilized during sleep, and how they subsequently influence behavior.</p>
                     
-                    <p data-i18n="about_2">I hold a PhD degree in Basic Medical Science from the University of Buenos Aires. I am trained in behavioral and cognitive neuroscience, with expertise in in vivo electrophysiology in freely-moving animals. I combine high-density neural recordings with data analysis and computational modeling to study how neural population dynamics in the hippocampus and prefrontal cortex support memory processes.</p>
-                    
-                    <p data-i18n="about_3">I am convinced that understanding the brain requires an integrative approach. My research spans multiple techniques—from behavior and optogenetics to electrophysiology—to dissect the neural circuits underlying memory retrieval, interference resolution, and sleep-dependent consolidation.</p>
+                    <p data-i18n="about_2">I hold a PhD degree in Basic Medical Science from the University of Buenos Aires. I am trained in behavioral and cognitive neuroscience, with expertise in in vivo electrophysiology in freely-moving animals. I combine high-density neural recordings with data analysis to study how neural population dynamics in the hippocampus and prefrontal cortex support memory processes.</p>
                 </div>
                 
                 <!-- RESEARCH TAB -->
@@ -285,8 +283,8 @@
                         <p data-i18n="r_int_label"><strong>Current research interests:</strong></p>
                         <ul class="research-list">
                             <li data-i18n="r_int_1">Memory formation and its stabilization during sleep</li>
-                            <li data-i18n="r_int_2">How memories influence subsequent behavior</li>
                             <li data-i18n="r_int_3">Hippocampal-prefrontal circuits supporting episodic memory</li>
+                            <li data-i18n="r_int_2">How memories influence subsequent behavior</li>
                         </ul>
                     </div>
 
@@ -298,7 +296,7 @@
                         </ul>
                     </div>
                     
-                    <p data-i18n="r_exp" style="margin-top: 25px; font-size: 15px; color: #555; line-height: 1.8;"><strong>Experimental approaches:</strong> I record neural activity in freely-moving rats during behavior—memory-guided tasks, sleep, and naturalistic exploration—using multi-site electrophysiology. I combine these neural recordings with behavioral analysis to understand how neural population dynamics support adaptive behavior and memory processes. Signal processing and machine learning techniques allow me to decode behavioral correlates of neural activity.</p>
+                    <p data-i18n="r_exp" style="margin-top: 25px; font-size: 15px; color: #555; line-height: 1.8;"><strong>Experimental approaches:</strong> I record neural activity in freely-moving rats during behavior—memory-guided tasks and sleep—using multi-site electrophysiology. I combine these neural recordings with behavioral analysis to understand how neural population dynamics support adaptive behavior and memory processes. I use the animal’s neural activity to predict (decode) behavior and infer the information these signals carry. I first correlate neural activity with behavior, and I am interested in then altering these electrophysiological signals to obtain causal evidence.</p>
                 </div>
                 
                 <!-- PUBLICATIONS TAB -->
@@ -407,15 +405,14 @@
 
         const I18N = {
         "es": {
-                "subtitle": "Neurocientífico | Investigador posdoctoral",
+                "subtitle": "Neurocientífico",
                 "tab_about": "sobre mí",
                 "tab_research": "investigación",
                 "tab_publications": "publicaciones",
                 "tab_cv": "cv",
                 "tab_contacts": "contacto",
                 "about_1": "Soy investigador posdoctoral en el Centro de Neurociencias de la Sorbonne Université, en París, en el Laboratorio Girardeau. Mi investigación se centra en cómo se forman los recuerdos, cómo se estabilizan durante el sueño y cómo influyen luego en la conducta.",
-                "about_2": "Tengo un doctorado en Ciencias Médicas Básicas por la Universidad de Buenos Aires. Me formé en neurociencia conductual y cognitiva, con experiencia en electrofisiología in vivo en animales en libre movimiento. Combino registros neuronales de alta densidad con análisis de datos y modelado computacional para estudiar cómo la dinámica de poblaciones neuronales en el hipocampo y la corteza prefrontal sustenta los procesos de memoria.",
-                "about_3": "Estoy convencido de que comprender el cerebro requiere un enfoque integrador. Mi investigación abarca múltiples técnicas —desde la conducta y la optogenética hasta la electrofisiología— para desentrañar los circuitos neuronales que subyacen a la recuperación de la memoria, la resolución de interferencia y la consolidación dependiente del sueño.",
+                "about_2": "Tengo un doctorado en Ciencias Médicas Básicas por la Universidad de Buenos Aires. Me formé en neurociencia conductual y cognitiva, con experiencia en electrofisiología in vivo en animales en libre movimiento. Combino registros neuronales de alta densidad con análisis de datos para estudiar cómo la dinámica de poblaciones neuronales en el hipocampo y la corteza prefrontal sustenta los procesos de memoria.",
                 "r_int_label": "<strong>Intereses de investigación actuales:</strong>",
                 "r_int_1": "Formación de la memoria y su estabilización durante el sueño",
                 "r_int_2": "Cómo los recuerdos influyen en la conducta posterior",
@@ -423,7 +420,7 @@
                 "r_ong_label": "<strong>Investigación en curso:</strong>",
                 "r_ong_1": "<strong>Dinámica de la red hipocampo-corteza prefrontal durante la recuperación de memorias dependiente del contexto.</strong> Me interesa cómo interactúan el hipocampo y la corteza prefrontal medial para recuperar el recuerdo apropiado cuando las claves que guían la recuperación están asociadas con múltiples recuerdos.",
                 "r_ong_2": "<strong>Representaciones del hipocampo dorsal y ventral de experiencias emocionales.</strong> Junto con Azul Silva, nos interesa cómo el hipocampo dorsal y el ventral representan distintas experiencias emocionales. Abordamos esta pregunta analizando dos conjuntos de datos que registramos nosotros, que incluyen neuronas de ambas regiones mientras los animales exploran un contexto con recompensa y un contexto aversivo.",
-                "r_exp": "<strong>Enfoques experimentales:</strong> Registro la actividad neuronal en ratas en libre movimiento durante la conducta —tareas guiadas por la memoria, sueño y exploración naturalista— mediante electrofisiología multisitio. Combino estos registros neuronales con el análisis conductual para comprender cómo la dinámica de poblaciones neuronales sustenta la conducta adaptativa y los procesos de memoria. Las técnicas de procesamiento de señales y aprendizaje automático me permiten decodificar correlatos conductuales de la actividad neuronal.",
+                "r_exp": "<strong>Enfoques experimentales:</strong> Registro la actividad neuronal en ratas en libre movimiento durante la conducta —tareas guiadas por la memoria y sueño— mediante electrofisiología multisitio. Combino estos registros neuronales con el análisis conductual para comprender cómo la dinámica de poblaciones neuronales sustenta la conducta adaptativa y los procesos de memoria. Utilizo la actividad neuronal del animal para predecir (decodificar) la conducta e inferir la información que transportan estas señales. Primero correlaciono la actividad neuronal con la conducta y me interesa luego alterar estas señales electrofisiológicas para obtener evidencia causal.",
                 "pub_footer": "También disponible en <a href=\"https://scholar.google.com/citations?user=6RFThogAAAAJ&amp;hl=es&amp;oi=ao\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> y <a href=\"https://orcid.org/0000-0002-5207-0428\" target=\"_blank\" rel=\"noopener\">ORCID</a>. # indica autor de correspondencia; * indica co-primer autor.",
                 "cv_text": "CV completo disponible para descargar:",
                 "cv_btn1": "📄 Descargar CV (PDF)",
@@ -432,15 +429,14 @@
                 "ct_links": "Enlaces:"
         },
         "fr": {
-                "subtitle": "Neuroscientifique | Chercheur postdoctoral",
+                "subtitle": "Neuroscientifique",
                 "tab_about": "à propos",
                 "tab_research": "recherche",
                 "tab_publications": "publications",
                 "tab_cv": "cv",
                 "tab_contacts": "contact",
                 "about_1": "Je suis chercheur postdoctoral au Centre de Neurosciences de Sorbonne Université, à Paris, dans le laboratoire Girardeau. Mes recherches portent sur la façon dont les souvenirs se forment, se stabilisent pendant le sommeil et influencent ensuite le comportement.",
-                "about_2": "Je suis titulaire d’un doctorat en sciences médicales fondamentales de l’Université de Buenos Aires. J’ai été formé en neurosciences comportementales et cognitives, avec une expertise en électrophysiologie in vivo chez l’animal en libre mouvement. Je combine des enregistrements neuronaux à haute densité avec l’analyse de données et la modélisation computationnelle pour étudier comment la dynamique des populations neuronales de l’hippocampe et du cortex préfrontal sous-tend les processus mnésiques.",
-                "about_3": "Je suis convaincu que comprendre le cerveau nécessite une approche intégrative. Mes recherches combinent plusieurs techniques — du comportement et de l’optogénétique à l’électrophysiologie — afin de disséquer les circuits neuronaux qui sous-tendent la récupération mnésique, la résolution des interférences et la consolidation dépendante du sommeil.",
+                "about_2": "Je suis titulaire d’un doctorat en sciences médicales fondamentales de l’Université de Buenos Aires. J’ai été formé en neurosciences comportementales et cognitives, avec une expertise en électrophysiologie in vivo chez l’animal en libre mouvement. Je combine des enregistrements neuronaux à haute densité avec l’analyse de données pour étudier comment la dynamique des populations neuronales de l’hippocampe et du cortex préfrontal sous-tend les processus mnésiques.",
                 "r_int_label": "<strong>Intérêts de recherche actuels :</strong>",
                 "r_int_1": "Formation de la mémoire et sa stabilisation pendant le sommeil",
                 "r_int_2": "Comment les souvenirs influencent le comportement ultérieur",
@@ -448,7 +444,7 @@
                 "r_ong_label": "<strong>Recherche en cours :</strong>",
                 "r_ong_1": "<strong>Dynamique du réseau hippocampo-cortex préfrontal lors de la récupération mnésique dépendante du contexte.</strong> Je m’intéresse à la façon dont l’hippocampe et le cortex préfrontal médian interagissent pour récupérer le souvenir approprié lorsque les indices qui guident la récupération sont associés à plusieurs souvenirs.",
                 "r_ong_2": "<strong>Représentations de l’hippocampe dorsal et ventral des expériences émotionnelles.</strong> Avec Azul Silva, nous nous intéressons à la manière dont l’hippocampe dorsal et ventral représentent différentes expériences émotionnelles. Nous abordons cette question en analysant deux jeux de données que nous avons enregistrés, qui incluent des neurones des deux régions pendant que les animaux explorent un contexte récompensé et un contexte aversif.",
-                "r_exp": "<strong>Approches expérimentales :</strong> J’enregistre l’activité neuronale chez des rats en libre mouvement pendant le comportement — tâches guidées par la mémoire, sommeil et exploration naturaliste — par électrophysiologie multi-sites. Je combine ces enregistrements neuronaux avec l’analyse comportementale pour comprendre comment la dynamique des populations neuronales sous-tend le comportement adaptatif et les processus mnésiques. Les techniques de traitement du signal et d’apprentissage automatique me permettent de décoder les corrélats comportementaux de l’activité neuronale.",
+                "r_exp": "<strong>Approches expérimentales :</strong> J’enregistre l’activité neuronale chez des rats en libre mouvement pendant le comportement — tâches guidées par la mémoire et sommeil — par électrophysiologie multi-sites. Je combine ces enregistrements neuronaux avec l’analyse comportementale pour comprendre comment la dynamique des populations neuronales sous-tend le comportement adaptatif et les processus mnésiques. J’utilise l’activité neuronale de l’animal pour prédire (décoder) le comportement et en déduire l’information que véhiculent ces signaux. Je commence par corréler l’activité neuronale au comportement, puis je m’intéresse à altérer ces signaux électrophysiologiques afin d’obtenir des preuves causales.",
                 "pub_footer": "Également disponible sur <a href=\"https://scholar.google.com/citations?user=6RFThogAAAAJ&amp;hl=es&amp;oi=ao\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> et <a href=\"https://orcid.org/0000-0002-5207-0428\" target=\"_blank\" rel=\"noopener\">ORCID</a>. # indique l’auteur correspondant ; * indique le co-premier auteur.",
                 "cv_text": "CV complet disponible au téléchargement :",
                 "cv_btn1": "📄 Télécharger le CV (PDF)",
