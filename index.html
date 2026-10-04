@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Juan Facundo Morici | Neuroscientist</title>
     <meta name="description" content="Juan Facundo Morici, neuroscientist and postdoctoral researcher at Sorbonne Université / Inserm (Paris). Research on memory formation, sleep and hippocampal-prefrontal circuits.">
     <link rel="canonical" href="https://facuumm.github.io/">
@@ -315,8 +316,8 @@
                 </div>
                 <div class="lang-switcher">
                     <button class="lang-btn active" onclick="changeLang('en')">EN</button>
-                    <button class="lang-btn" onclick="changeLang('es')">ES</button>
                     <button class="lang-btn" onclick="changeLang('fr')">FR</button>
+                    <button class="lang-btn" onclick="changeLang('es')">ES</button>
                 </div>
             </div>
             
@@ -494,7 +495,7 @@
                 "tab_cv": "cv",
                 "tab_contacts": "contacto",
                 "about_1": "Soy investigador posdoctoral en el Centro de Neurociencias de la Sorbonne Université, en París, en el Laboratorio Girardeau. Mi investigación se centra en cómo se forman los recuerdos, cómo se estabilizan durante el sueño y cómo influyen luego en la conducta.",
-                "about_2": "Tengo un doctorado en Ciencias Médicas Básicas por la Universidad de Buenos Aires. Me formé en neurociencia conductual y cognitiva, con experiencia en electrofisiología in vivo en animales en libre movimiento. Combino registros neuronales de alta densidad con análisis de datos para estudiar cómo la dinámica de poblaciones neuronales en el hipocampo y la corteza prefrontal sustenta los procesos de memoria.",
+                "about_2": "Tengo un doctorado en Ciencias Médicas Básicas por la Universidad de Buenos Aires. Me formé en neurociencia conductual y cognitiva, con experiencia en electrofisiología in vivo en animales en libre movimiento. Combino registros neuronales de alta densidad con análisis de datos para estudiar cómo las dinámicas de poblaciones neuronales en el hipocampo y la corteza prefrontal sustentan los procesos de memoria.",
                 "r_int_label": "<strong>Intereses de investigación actuales:</strong>",
                 "r_int_1": "Formación de la memoria y su estabilización durante el sueño",
                 "r_int_2": "Cómo los recuerdos influyen en la conducta posterior",
@@ -502,7 +503,7 @@
                 "r_ong_label": "<strong>Investigación en curso:</strong>",
                 "r_ong_1": "<strong>Dinámica de la red hipocampo-corteza prefrontal durante la recuperación de memorias dependiente del contexto.</strong> Me interesa cómo interactúan el hipocampo y la corteza prefrontal medial para recuperar el recuerdo apropiado cuando las claves que guían la recuperación están asociadas con múltiples recuerdos.",
                 "r_ong_2": "<strong>Representaciones del hipocampo dorsal y ventral de experiencias emocionales.</strong> Junto con Azul Silva, nos interesa cómo el hipocampo dorsal y el ventral representan distintas experiencias emocionales. Abordamos esta pregunta analizando dos conjuntos de datos que registramos nosotros, que incluyen neuronas de ambas regiones mientras los animales exploran un contexto con recompensa y un contexto aversivo.",
-                "r_exp": "<strong>Enfoques experimentales:</strong> Registro la actividad neuronal en ratas en libre movimiento durante la conducta —tareas guiadas por la memoria y sueño— mediante electrofisiología multisitio. Combino estos registros neuronales con el análisis conductual para comprender cómo la dinámica de poblaciones neuronales sustenta la conducta adaptativa y los procesos de memoria. Utilizo la actividad neuronal del animal para predecir (decodificar) la conducta e inferir la información que transportan estas señales. Primero correlaciono la actividad neuronal con la conducta y me interesa luego alterar estas señales electrofisiológicas para obtener evidencia causal.",
+                "r_exp": "<strong>Enfoques experimentales:</strong> Registro la actividad neuronal en ratas en libre movimiento durante la conducta —tareas guiadas por la memoria y sueño— mediante electrofisiología multisitio. Combino estos registros neuronales con el análisis conductual para comprender cómo las dinámicas de poblaciones neuronales sustentan la conducta adaptativa y los procesos de memoria. Utilizo la actividad neuronal del animal para predecir (decodificar) la conducta e inferir la información que transportan estas señales. Primero correlaciono la actividad neuronal con la conducta y me interesa luego alterar estas señales electrofisiológicas para obtener evidencia causal.",
                 "pub_footer": "También disponible en <a href=\"https://scholar.google.com/citations?user=6RFThogAAAAJ&amp;hl=es&amp;oi=ao\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> y <a href=\"https://orcid.org/0000-0002-5207-0428\" target=\"_blank\" rel=\"noopener\">ORCID</a>. # indica autor de correspondencia; * indica co-primer autor.",
                 "cv_text": "CV completo disponible para descargar:",
                 "cv_btn1": "📄 Descargar CV (PDF)",
@@ -560,6 +561,12 @@
             });
             applyLang(lang);
         }
+    
+        // Open in the visitor's browser language when we have a translation (es / fr)
+        (function() {
+            var l = (navigator.language || 'en').slice(0, 2).toLowerCase();
+            if (l === 'es' || l === 'fr') changeLang(l);
+        })();
     </script>
 </body>
 </html>
